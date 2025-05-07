@@ -1,54 +1,50 @@
-// import React from 'react';
-// import Link from "next/link";
-// import Image from 'next/image';
 
-
-// import Icon from "../../public/icon.png";
-// import Logo from "../../public/logosaya.png";
-
-// const Navbar = () => {
-//   return (
-//     <div className="absolute top-0 left-0 w-full z-50 flex justify-between px-10 py-4 bg-white bg-opacity-50 items-end">
-//       <div className="flex items-end space-x-2">
-//         <Image src={Icon} alt="Icon" width={20} height={20}  className='pb-1'/>
-//         <Image src={Logo} alt="Logo" width={100} height={30} />
-//       </div>
-
-//       <nav>
-//         <ul className="space-x-6 text-black uppercase text-[11px] flex">
-//           <li><Link className="hover:underline" href="/">search</Link></li>
-//           <li><Link className="hover:underline" href="/">account</Link></li>
-//           <li><Link className="hover:underline" href="/">wishlist</Link></li>
-//           <li><Link className="hover:underline" href="/">cart</Link></li>
-//         </ul>
-//       </nav>
-//     </div>
-//   );
-// };
-
-// export default Navbar;
-
+'use client';
 import React from 'react';
-import Link from "next/link";
+import Link from 'next/link';
 import Image from 'next/image';
+import { CiSearch, CiShoppingCart } from 'react-icons/ci';
+import { VscAccount } from 'react-icons/vsc';
 
-import Icon from "../../public/icon.png";
-import Logo from "../../public/logosaya.png";
+import Icon from '../../public/icon.png';
+import Logo from '../../public/logosaya.png';
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 left-0 w-full z-50 flex justify-between px-10 py-4 bg-opacity-50 items-end">
+    <div className="fixed top-0 left-0 w-full z-50 flex justify-between px-6 py-4  bg-opacity-50   items-end">
+      {/* Left: Logo */}
       <div className="flex items-end space-x-2">
-        <Image src={Icon} alt="Icon" width={20} height={20}  className='pb-1'/>
+        <Image src={Icon} alt="Icon" width={20} height={20} className="pb-1" />
         <Image src={Logo} alt="Logo" width={100} height={30} />
       </div>
 
+      {/* Right: Navigation */}
       <nav>
-        <ul className="space-x-6 text-black uppercase text-[11px] flex">
-          <li><Link className="hover:underline" href="/">search</Link></li>
-          <li><Link className="hover:underline" href="/">account</Link></li>
-          <li><Link className="hover:underline" href="/">wishlist</Link></li>
-          <li><Link className="hover:underline" href="/">cart</Link></li>
+        <ul className="flex space-x-6 text-black uppercase text-[11px] items-end">
+          <li>
+            <Link href="/" className="flex items-center space-x-1">
+              <CiSearch className="text-xl md:hidden "  />
+              <span className="hidden md:inline">search</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="flex items-center space-x-1">
+              <VscAccount className="text-xl md:hidden" />
+              <span className="hidden md:inline">account</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="flex items-center space-x-1">
+              <CiShoppingCart  className="text-xl md:hidden" />
+              <span className="hidden md:inline">wishlist</span>
+            </Link>
+          </li>
+          <li>
+            <Link href="/" className="flex items-center space-x-1">
+              
+              <span className="hidden md:inline">cart</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

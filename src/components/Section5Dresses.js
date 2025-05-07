@@ -5,9 +5,19 @@ import Banner5 from "../../public/section5.jpg"
 
 const Section5Dresses5 = () => {
   return (
-    <div>
-      <Image src={Banner5} className='h-[100vh] w-[1916px]'/>
-    </div>
+    // <div>
+    //   <Image src={Banner5} className='h-[100vh] w-[1916px]'/>
+    // </div>
+    <section
+    className="relative h-screen bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/section5.jpg')",
+    }}
+   
+  >
+    
+  </section>
+
   )
 }
 

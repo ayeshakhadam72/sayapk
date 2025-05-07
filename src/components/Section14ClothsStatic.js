@@ -5,9 +5,18 @@ import Banner14 from "../../public/section14.jpg"
 
 const Section14ClothsStatic = () => {
   return (
-     <div>
-              <Image src={Banner14} className='h-[100vh] w-[1916px] '/>
-            </div>
+    //  <div>
+    //           <Image src={Banner14} className=' '/>
+    //         </div>
+    <section
+    className="relative h-screen bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/section14.jpg')",
+    }}
+   
+  >
+    
+  </section>
          
   )
 }

@@ -5,9 +5,18 @@ import Image from 'next/image'
 import Banner15 from "../../public/section15.jpg"
 const Section15img = () => {
   return (
-     <div>
-              <Image src={Banner15} className='h-[100vh] w-[1916px] '/>
-            </div>
+    //  <div>
+    //           <Image src={Banner15} className=' '/>
+    //         </div>
+    <section
+    className="relative h-screen bg-cover bg-center"
+    style={{
+      backgroundImage: "url('/section15.jpg')",
+    }}
+   
+  >
+    
+  </section>
          
   )
 }

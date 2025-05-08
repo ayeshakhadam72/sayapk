@@ -23,7 +23,7 @@ const Navbar = () => {
         <ul className="flex space-x-6 text-black uppercase text-[11px] items-end">
           <li>
             <Link href="/" className="flex items-center space-x-1">
-              <CiSearch className="text-xl md:hidden "  />
+              <CiSearch className="text-xl md:hidden mb-[-2px] "  />
               <span className="hidden md:inline">search</span>
             </Link>
           </li>
@@ -35,7 +35,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/" className="flex items-center space-x-1">
-              <CiShoppingCart  className="text-xl md:hidden" />
+              <CiShoppingCart  className="text-2xl md:hidden mb-[-3px]" />
               <span className="hidden md:inline">wishlist</span>
             </Link>
           </li>

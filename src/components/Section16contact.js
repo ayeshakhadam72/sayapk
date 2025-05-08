@@ -20,15 +20,15 @@ export default function Footer() {
             {/* Center Logo */}
             <div className="mb-10 md:mb-20 mt-4 md:pt-16 lg:pt-40 flex justify-center">
                 <Image src={Logo}
-                    className=" pt-20 sm:pt-0 object-cover "
+                    className="hidden sm:inline sm:pt-0 object-cover "
                 />
             </div>
             
-            <div className="container mx-auto px-4">
+            <div className="container pt-2 mx-auto px-4">
                 {/* Footer Content */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-6 text-sm">
                     {/* Contact Info */}
-                    <div className="space-y-3 mb-6 md:mb-0">
+                    <div className="space-y-3 mb-2 md:mb-0">
                         <div className="flex items-center">
                             <Mail className="w-4 h-4 mr-2 flex-shrink-0" />
                             <a href="mailto:sale@saya.pk" className="hover:text-gray-600 transition-colors">sale@saya.pk</a>
@@ -54,7 +54,7 @@ export default function Footer() {
                     </div>
 
                     {/* Help & Info */}
-                    <div className="mb-6 md:mb-0">
+                    <div className="mb-2 md:mb-0">
                         <h4 className="font-semibold pb-3 md:pb-4 text-base">Help & Information</h4>
                         <ul className="space-y-3 md:space-y-5">
                             <li>
@@ -70,8 +70,8 @@ export default function Footer() {
                     </div>
 
                     {/* Customer Care */}
-                    <div className="mb-6 md:mb-0">
-                        <h4 className="font-semibold pb-3 md:pb-4 text-base">Customer Care</h4>
+                    <div className="mb-2 md:mb-0">
+                        <h4 className="font-semibold pb-1 md:pb-4 text-base">Customer Care</h4>
                         <ul className="space-y-3 md:space-y-5">
                             <li>
                                 <Link href="/contact" className="hover:text-gray-600 transition-colors">Contact Us</Link>
@@ -87,7 +87,7 @@ export default function Footer() {
 
                     {/* Newsletter Signup */}
                     <div>
-                        <h4 className="font-semibold pb-3 md:pb-4 text-base">Newsletter Signup</h4>
+                        <h4 className="font-semibold pb-1 md:pb-4 text-base">Newsletter Signup</h4>
                         <p className="text-sm pb-3 md:pb-4">Subscribe to our newsletter</p>
                         <div className="relative w-full">
                             <input
@@ -105,7 +105,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom */}
-                <div className="text-xs sm:text-sm mt-10 md:mt-16 lg:mt-24 pt-6 md:pt-10 lg:pt-16 border-t border-gray-300">
+                <div className="text-xs sm:text-sm mt-5 md:mt-16 lg:mt-24 pt-6 md:pt-10 lg:pt-16 border-t border-gray-300">
                     <p className="text-center md:text-left">
                         Copyright © {new Date().getFullYear()} <strong>SAYA</strong> all
                         rights reserved. Powered by Alchemative

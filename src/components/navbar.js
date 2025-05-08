@@ -20,7 +20,7 @@ const Navbar = () => {
 
       {/* Right: Navigation */}
       <nav>
-        <ul className="flex space-x-6 text-black uppercase text-[11px] items-end">
+        <ul className="flex space-x-6 text-black uppercase text-[11px] items-center">
           <li>
             <Link href="/" className="flex items-center space-x-1">
               <CiSearch className="text-xl md:hidden mb-[-2px] "  />

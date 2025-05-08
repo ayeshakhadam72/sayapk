@@ -6,7 +6,7 @@ const WhatsApp = () => {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <a 
-        href="https://wa.me/yournumber" 
+        // href="https://wa.me/yournumber" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg transition"
